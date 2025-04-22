@@ -13,7 +13,7 @@ HGL * list_create(int value)
         return NULL;
     }
     S->maxlen = value;
-    S->data = (data_t *)malloc(S->maxlen);
+    S->data = (data_t *)malloc((sizeof)data_t*S->maxlen);
     if(S->data == NULL)
     {
         printf("the memory assigning for array failed->the list creation failed!\n");
